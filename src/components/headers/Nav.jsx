@@ -31,10 +31,10 @@ export default function Nav() {
             : ""
         } `}
       >
-        <a href="/" className="item-link">
+        <Link to="/" className="item-link">
           Home
           {/* <i className="icon icon-arrow-down" /> */}
-        </a>
+        </Link>
         {/* <div className="sub-menu mega-menu">
           <div className="container">
             <div className="row-demo">
@@ -95,11 +95,11 @@ export default function Nav() {
             : ""
         } `}
       >
-        <a href="#" className="item-link">
+        <Link to="/shop" className="item-link">
           Shop
-          <i className="icon icon-arrow-down" />
-        </a>
-        <div className="sub-menu mega-menu">
+        </Link>
+
+        {/* <div className="sub-menu mega-menu">
           <div className="container">
             <div className="row">
               <div className="col-lg-2">
@@ -211,7 +211,7 @@ export default function Nav() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </li>
       <li
         className={`menu-item ${

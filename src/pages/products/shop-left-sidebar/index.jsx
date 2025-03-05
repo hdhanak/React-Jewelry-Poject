@@ -6,6 +6,8 @@ import Products11 from "@/components/products/Products11";
 import { Link } from "react-router-dom";
 import React from "react";
 import MetaComponent from "@/components/common/MetaComponent";
+import Header10 from "@/components/headers/Header10";
+import ShopCategories2 from "@/components/products/ShopCategories2";
 const metadata = {
   title:
     "Shop Left Sidebar || Modave - Multipurpose Reactjs eCommerce Template",
@@ -16,7 +18,7 @@ export default function ShopLeftSidebarPage() {
     <>
       <MetaComponent meta={metadata} />
       <Topbar6 bgColor="bg-main" />
-      <Header1 />
+      <Header10 />
       <div
         className="page-title"
         style={{ backgroundImage: "url(/images/section/page-title.jpg)" }}
@@ -40,6 +42,7 @@ export default function ShopLeftSidebarPage() {
           </div>
         </div>
       </div>
+      <ShopCategories2 />
       <Products11 />
       <Footer1 />
     </>

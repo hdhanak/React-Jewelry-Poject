@@ -6,6 +6,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import MetaComponent from "@/components/common/MetaComponent";
+import Header10 from "@/components/headers/Header10";
+import StoreLocations2 from "@/components/otherPages/StoreLocations2";
+import StoreLocations3 from "@/components/otherPages/StoreLocations3";
 const metadata = {
   title: "Store List || Modave - Multipurpose Reactjs eCommerce Template",
   description: "Modave - Multipurpose Reactjs eCommerce Template",
@@ -16,7 +19,7 @@ export default function StorelistPage() {
     <>
       <MetaComponent meta={metadata} />
       <Topbar6 bgColor="bg-main" />
-      <Header1 />
+      <Header10 />
       <div
         className="page-title"
         style={{ backgroundImage: "url(/images/section/page-title.jpg)" }}
@@ -31,14 +34,14 @@ export default function StorelistPage() {
                     Homepage
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <i className="icon-arrRight" />
                 </li>
                 <li>
                   <a className="link" href="#">
                     Pages
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <i className="icon-arrRight" />
                 </li>
@@ -48,7 +51,7 @@ export default function StorelistPage() {
           </div>
         </div>
       </div>
-      <StoreLocations1 />
+      <StoreLocations3 />
       <Footer1 />
     </>
   );

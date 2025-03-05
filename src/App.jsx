@@ -314,7 +314,7 @@ function App() {
                 element={<ShopFullwidthGridPage />}
               />
               <Route
-                path="shop-left-sidebar"
+                path="shop"//shop-left-sidebar
                 element={<ShopLeftSidebarPage />}
               />
               <Route

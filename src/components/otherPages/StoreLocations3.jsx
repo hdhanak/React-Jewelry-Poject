@@ -28,28 +28,27 @@ export default function StoreLocations3() {
                 <h4>Information</h4>
                 <div className="mb_20">
                   <div className="text-title mb_8">Phone:</div>
-                  <p className="text-secondary">+1 666 234 8888</p>
+                  <p className="text-secondary">+91 98765 43210</p>
                 </div>
                 <div className="mb_20">
                   <div className="text-title mb_8">Email:</div>
-                  <p className="text-secondary">themesflat@gmail.com</p>
+                  <p className="text-secondary">shreeganeshjewellers@gmail.com</p>
                 </div>
                 <div className="mb_20">
                   <div className="text-title mb_8">Address:</div>
                   <p className="text-secondary">
-                    2163 Phillips Gap Rd, West Jefferson, North Carolina, United
-                    States
+                    2163 Chikuvadi Rd, Katargam, Surat, Gujarat, India
                   </p>
                 </div>
                 <div>
                   <div className="text-title mb_8">Open Time:</div>
                   <p className="mb_4 open-time">
-                    <span className="text-secondary">Mon - Sat:</span> 7:30am -
-                    8:00pm PST
+                    <span className="text-secondary">Mon - Sat:</span> 8:00am -
+                    8:00pm 
                   </p>
                   <p className="open-time">
                     <span className="text-secondary">Sunday:</span> 9:00am -
-                    5:00pm PST
+                    5:00pm 
                   </p>
                 </div>
               </div>

@@ -80,7 +80,7 @@ export default function Footer1({
     <>
       <footer
         id="footer"
-        className={`footer ${dark ? "bg-main" : ""} ${
+        className={`footer ${dark ? "" : "bg-main"} ${
           hasPaddingBottom ? "has-pb" : ""
         } `}
       >
@@ -103,7 +103,7 @@ export default function Footer1({
                       </Link>
                     </div>
                     <div className="footer-address">
-                      <p>549 Oak St.Crystal Lake, IL 60014</p>
+                      <p>2163 Chikuvadi Rd, Katargam, Surat, Gujarat, India</p>
                       <Link
                         to={`/contact`}
                         className={`tf-btn-default fw-6 ${
@@ -117,11 +117,11 @@ export default function Footer1({
                     <ul className="footer-info">
                       <li>
                         <i className="icon-mail" />
-                        <p>themesflat@gmail.com</p>
+                        <p>shreeganeshjewellers@gmail.com</p>
                       </li>
                       <li>
                         <i className="icon-phone" />
-                        <p>315-666-6688</p>
+                        <p>+91 98765 43210</p>
                       </li>
                     </ul>
                     <ul
