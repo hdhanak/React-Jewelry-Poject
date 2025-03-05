@@ -33,6 +33,33 @@
 .icon-search2:before {
   content: "\e93c";
 }
+/* .icon-search2:hover::after { content: "Search"; position: absolute; background: black; color: white; padding: 5px; border-radius: 4px; font-size: 15px; bottom: -25px; left: 50%; transform: translateX(-50%); white-space: nowrap; } */
+.icon-search2:hover::after {
+  content: "Search";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+  color: white;
+  padding: 6px 12px; /* Better spacing */
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Inter", "Arial", sans-serif; /* Clean and professional font */
+  font-weight: 500; /* Slightly bold for readability */
+  letter-spacing: 0.5px; /* Improves text clarity */
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a modern look */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.icon-search2:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .icon-instagram2:before {
   content: "\e93e";
 }
@@ -135,6 +162,32 @@
 .icon-ShoppingBagOpen:before {
   content: "\e920";
 }
+.icon-ShoppingBagOpen:hover::after {
+  content: "Shopping Cart";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+  color: white;
+  padding: 6px 12px; /* Better spacing */
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Inter", "Arial", sans-serif; /* Clean and professional font */
+  font-weight: 500; /* Slightly bold for readability */
+  letter-spacing: 0.5px; /* Improves text clarity */
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a modern look */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.icon-ShoppingBagOpen:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .icon-pants:before {
   content: "\e921";
 }
@@ -218,6 +271,31 @@
 }
 .icon-heart:before {
   content: "\e93a";
+}
+.icon-heart:hover::after {
+  content: "Wishlist";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+  color: white;
+  padding: 6px 12px; /* Better spacing */
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Inter", "Arial", sans-serif; /* Clean and professional font */
+  font-weight: 500; /* Slightly bold for readability */
+  letter-spacing: 0.5px; /* Improves text clarity */
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a modern look */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.icon-heart:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 .icon-lightning:before {
   content: "\e93b";

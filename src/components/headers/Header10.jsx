@@ -12,6 +12,7 @@ export default function Header10() {
       <div className="main-header line-bt">
         <div className="container">
           <div className="row wrapper-header align-items-center">
+          {/*
             <div className="col-xl-5 d-none d-xl-block">
               <div className="wrapper-header-left d-flex align-items-center gap-20">
                 <div className="tf-currencies">
@@ -31,6 +32,7 @@ export default function Header10() {
                 </Link>
               </div>
             </div>
+          */}
             <div className="col-md-4 col-3 d-xl-none">
               <a
                 href="#mobileMenu"
@@ -46,13 +48,13 @@ export default function Header10() {
                 <img
                   alt="logo"
                   className="logo"
-                  src="/images/logo/logo.svg"
-                  width={144}
+                  src="/images/logo/logo4.png"
+                  width={80}
                   height={25}
                 />
               </Link>
             </div>
-            <div className="col-xl-5 col-md-4 col-3">
+            <div className="col-xl-10 col-md-4 col-3">
               <ul className="nav-icon d-flex justify-content-end align-items-center">
                 <li className="nav-search">
                   <a
@@ -107,7 +109,7 @@ export default function Header10() {
       <div className="header-bottom style-2 d-none d-xl-block line-bt">
         <div className="container">
           <div className="row wrapper-header align-items-center">
-            <div className="col-xl-3">
+            {/* <div className="col-xl-3">
               <div className="box-left">
                 <div className="tf-list-categories">
                   <a href="#" className="categories-title">
@@ -117,19 +119,20 @@ export default function Header10() {
                   <CategoryList />
                 </div>
               </div>
-            </div>
-            <div className="col-xl-6">
+            </div> */}
+            <div className="col-xl-10">
               <nav className="box-navigation text-center">
                 <ul className="box-nav-ul d-flex align-items-center justify-content-center">
                   <Nav />
                 </ul>
               </nav>
             </div>
-            <div className="col-xl-3">
-              <a href="tel:315-666-6688" className="box-right phone">
-                <span className="icon icon-phone" />
-                315-666-6688
-              </a>
+            <div className="col-xl-2">
+            <a href="tel:+919876543210" className="box-right phone">
+              <span className="icon icon-phone" />
+              +91 98765 43210
+            </a>
+
             </div>
           </div>
         </div>

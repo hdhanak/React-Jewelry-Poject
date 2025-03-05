@@ -525,7 +525,7 @@ function App() {
         <Compare />
         <MobileMenu />
 
-        <NewsLetterModal />
+        {/* <NewsLetterModal /> */}
         <SearchModal />
         <SizeGuide />
         <Wishlist />
