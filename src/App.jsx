@@ -234,71 +234,7 @@ function App() {
           <Routes>
             <Route path="/">
               <Route index element={<HomeJeweleryPage1 />} />
-            {/*  <Route
-                path="home-fashion-eleganceNest"
-                element={<HomeFashionElegentNestPage />}
-              />
-              <Route
-                path="home-fashion-main"
-                element={<HomeFashionMainPage />}
-              />
-              <Route
-                path="home-fashion-trendset"
-                element={<HomeFashionTrendsetPage />}
-              />
-              <Route
-                path="home-fashion-vogueLing"
-                element={<HomeFashionVoguelingPage />}
-              />
-              <Route
-                path="home-fashion-elegantAbode"
-                element={<HomeFashionElegantAbodePage />}
-              />
-              <Route
-                path="home-fashion-glamDwell"
-                element={<HomeFashionGlamdwellPage />}
-              />
-              <Route
-                path="home-fashion-classyCove"
-                element={<HomeFashionClassyCovePage />}
-              />
-              <Route
-                path="home-fashion-chicHaven"
-                element={<HomeFashionChicHavenPage />}
-              />
-              <Route
-                path="home-fashion-chicHaven-02"
-                element={<HomeFashionChicHavenPage2 />}
-              />
-              <Route
-                path="home-fashion-tiktok"
-                element={<HomeFashionTiktokPage />}
-              />
-              <Route
-                path="home-fashion-luxeLiving"
-                element={<HomeFasionLuxelivingPage />}
-              />
-              <Route
-                path="home-fashion-modernRetreat"
-                element={<HomeFashionModernRetreatPage />}
-              />
-              <Route path="home-beauty" element={<HomeBeautyPage />} />
-              <Route path="home-skincare" element={<HomeSkincarePage />} />
-              <Route path="home-cosmetic" element={<HomeCosmeticPage />} />
-              <Route path="home-decor" element={<HomeDecorPage />} />
-              <Route path="home-furniture" element={<HomeFurniturePage />} />*/
-              }
               <Route path="home-jewelry-01" element={<HomeJeweleryPage1 />} />
-             {/*
-              <Route path="home-jewelry-02" element={<HomeJeweleryPage2 />} />
-              <Route path="home-activewear" element={<HomeActivemearPage />} />
-              <Route path="home-organic" element={<HomeOrganicPage />} />
-              <Route path="home-sock" element={<HomeSockPage />} />
-              <Route path="home-camping" element={<HomeCampingPage />} />
-              <Route path="home-electronic" element={<HomeElectronicPage />} />
-              <Route path="home-pet-store" element={<HomePetStorePage />} />
-             */}
-
               <Route
                 path="shop-default-grid"
                 element={<ShopDefaultGridPage />}
