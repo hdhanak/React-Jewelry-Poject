@@ -5,7 +5,6 @@ import CountdownTimer from "../common/Countdown";
 import { useContextElement } from "@/context/Context";
 export default function ProductCard1({ product, gridClass = "" }) {
   const [currentImage, setCurrentImage] = useState(product.imgSrc);
-
   const {
     setQuickAddItem,
     addToWishlist,
@@ -17,35 +16,54 @@ export default function ProductCard1({ product, gridClass = "" }) {
     isAddedToCartProducts,
   } = useContextElement();
 
+  // useEffect(() => {
+    
+  //   console.log(JSON.stringify(product.product_images),'string');
+    
+  //   setCurrentImage(product.imgSrc);
+  // }, [product]);
+  
   useEffect(() => {
-    setCurrentImage(product.imgSrc);
+    if (product.product_images?.length) {
+      // Parse the first image object
+      const firstImageObject = JSON.parse(product.product_images[0]);
+      
+      // Set the image if it exists
+      console.log(firstImageObject.image,"firstImageObject.image");
+      
+      if (firstImageObject.image) {
+        const imgSrc = `http://localhost:8000/uploads/product_images/${firstImageObject.image}`
+        setCurrentImage(imgSrc);
+      }
+    }
   }, [product]);
-
+  
+  console.log(product,"product.product_images");
   return (
     <div
       className={`card-product wow fadeInUp ${gridClass} ${
-        product.isOnSale ? "on-sale" : ""
-      } ${product.sizes ? "card-product-size" : ""}`}
+        product?.isOnSale ? "on-sale" : ""
+      } ${product?.sizes ? "card-product-size" : ""}`}
     >
       <div className="card-product-wrapper">
-        <Link to={`/product-detail/${product.id}`} className="product-img">
+        <Link to={`/product-description-menutab/${product.id}`} className="product-img">
           <img
             className="lazyload img-product"
             src={currentImage}
-            alt={product.title}
+            alt={product.product_title}
             width={600}
             height={800}
           />
 
           <img
             className="lazyload img-hover"
-            src={product.imgHover}
-            alt={product.title}
+            src={currentImage}
+            alt={product.product_title}
             width={600}
             height={800}
           />
         </Link>
-        {product.hotSale && (
+        {/* {product.hotSale && (
           <div className="marquee-product bg-main">
             <div className="marquee-wrapper">
               <div className="initial-child-container">
@@ -165,14 +183,14 @@ export default function ProductCard1({ product, gridClass = "" }) {
               </div>
             </div>
           </div>
-        )}
-        {product.oldPrice ? (
+        )} */}
+        {/* {product.oldPrice ? (
           <div className="on-sale-wrap">
-            <span className="on-sale-item">-25%</span>
+            <span className="on-sale-item">-10%</span>
           </div>
         ) : (
           ""
-        )}
+        )} */}
         <div className="list-product-btn">
           <a
             onClick={() => addToWishlist(product.id)}
@@ -232,16 +250,16 @@ export default function ProductCard1({ product, gridClass = "" }) {
         </div>
       </div>
       <div className="card-product-info">
-        <Link to={`/product-detail/${product.id}`} className="title link">
-          {product.title}
+        <Link to={`/product-description-menutab/${product.id}`} className="title link">
+          {product.product_title}
         </Link>
         <span className="price">
-          {product.oldPrice && (
-            <span className="old-price">${product.oldPrice.toFixed(2)}</span>
+          {product.product_today_price && (
+            <span className="old-price">{"\u20B9"}{product.product_today_price}</span>
           )}{" "}
-          ${product.price?.toFixed(2)}
+          {"\u20B9"}{product.product_today_price}
         </span>
-        {product.colors && (
+        {/* {product.colors && (
           <ul className="list-color-product">
             {product.colors.map((color, index) => (
               <li
@@ -262,7 +280,7 @@ export default function ProductCard1({ product, gridClass = "" }) {
               </li>
             ))}
           </ul>
-        )}
+        )} */}
       </div>
     </div>
   );

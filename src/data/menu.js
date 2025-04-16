@@ -193,6 +193,50 @@ export const shopLayout = [
   { href: "/shop-filter-dropdown", name: "Filter Dropdown" },
   { href: "/shop-filter-canvas", name: "Filter Canvas" },
 ];
+export const shopDailyWear = [
+  { href: "/shop-bangles", name: "Bangles" },
+  { href: "/shop-earrings", name: "Earrings" },
+  { href: "/shop-necklaces", name: "Necklaces" },
+  { href: "/shop-pendants", name: "Pendants" },
+  { href: "/shop-rings", name: "Rings" },
+  { href: "/shop-bracelets", name: "Bracelets" },
+  { href: "/shop-mangalsutra", name: "Mangalsutra" },
+];
+export const shopWedding = [
+  { href: "/shop-bridal-necklaces", name: "Bridal Necklaces" },
+  { href: "/shop-bangles", name: "Wedding Bangles" },
+  { href: "/shop-mangalsutra", name: "Mangalsutra" },
+  { href: "/shop-bridal-rings", name: "Bridal Rings" },
+  { href: "/shop-bridal-earrings", name: "Bridal Earrings" },
+  { href: "/shop-payal", name: "Wedding Anklets (Payal)" },
+  // { href: "/shop-maang-tikka", name: "Maang Tikka" },
+];
+export const shopOfficeWear = [
+  { href: "/shop-minimal-necklaces", name: "Minimal Necklaces" },
+  { href: "/shop-stud-earrings", name: "Stud Earrings" },
+  { href: "/shop-hoop-earrings", name: "Hoop Earrings" },
+  { href: "/shop-delicate-bracelets", name: "Delicate Bracelets" },
+  { href: "/shop-simple-rings", name: "Simple Rings" },
+  { href: "/shop-pendants", name: "Elegant Pendants" },
+  { href: "/shop-lightweight-bangles", name: "Lightweight Bangles" },
+  { href: "/shop-charm-bracelets", name: "Charm Bracelets" },
+  { href: "/shop-office-watch", name: "Jewelry Watches" },
+];
+export const shopSilverCollection = [
+  { href: "/shop-silver-necklaces", name: "Silver Necklaces" },
+  { href: "/shop-silver-bracelets", name: "Silver Bracelets" },
+  { href: "/shop-silver-earrings", name: "Silver Earrings" },
+  { href: "/shop-silver-rings", name: "Silver Rings" },
+  { href: "/shop-silver-pendants", name: "Silver Pendants" },
+  { href: "/shop-silver-anklets", name: "Silver Anklets" },
+  { href: "/shop-silver-bangles", name: "Silver Bangles" },
+  { href: "/shop-silver-toe-rings", name: "Silver Toe Rings" },
+  // { href: "/shop-oxidized-silver", name: "Oxidized Silver Jewelry" },
+  // { href: "/shop-sterling-silver", name: "Sterling Silver Jewelry" },
+  { href: "/shop-silver-idols", name: "Silver Idols & Coins" },
+];
+
+
 
 export const shopFeatures = [
   { href: "/shop-categories-top", name: "Categories Top 1" },
@@ -248,6 +292,131 @@ export const productLinks = [
   },
   { href: "/product-fixed-price/1", name: "Product Fixed Price" },
   { href: "/product-fixed-scroll/1", name: "Product Fixed Scrolls" },
+];
+export const ringMetal = [
+  { href: "/shop", name: "Gold Rings" },
+  { href: "/silver-rings", name: "Silver Rings" },
+  { href: "/platinum-rings", name: "Platinum Rings" },
+  { href: "/rose-gold-rings", name: "Rose Gold Rings" },
+  { href: "/white-gold-rings", name: "White Gold Rings" },
+  { href: "/diamond-rings", name: "Diamond Rings" },
+];
+export const ringOccasion = [
+  { href: "/wedding-rings", name: "Wedding Rings" },
+  { href: "/office-rings", name: "Office-Wear Rings" },
+  { href: "/anniversary-rings", name: "Anniversary Rings" },
+  { href: "/party-rings", name: "Party Rings" },
+  { href: "/casual-rings", name: "Casual Rings" },
+  // { href: "/festive-rings", name: "Festive Rings" },
+  // { href: "/gift-rings", name: "Gift Rings" },
+];
+export const earringsMetal = [
+  { href: "/gold-earrings", name: "Gold Earrings" },
+  { href: "/silver-earrings", name: "Silver Earrings" },
+  { href: "/diamond-earrings", name: "Diamond Earrings" },
+  // { href: "/platinum-earrings", name: "Platinum Earrings" },
+  { href: "/rose-gold-earrings", name: "Rose Gold Earrings" },
+];
+
+export const earringsOccasion = [
+  { href: "/wedding-earrings", name: "Wedding Earrings" },
+  { href: "/engagement-earrings", name: "Engagement Earrings" },
+  // { href: "/party-earrings", name: "Party Earrings" },
+  { href: "/casual-earrings", name: "Casual Earrings" },
+  // { href: "/festive-earrings", name: "Festive Earrings" },
+  { href: "/office-earrings", name: "Office Wear Earrings" },
+  // { href: "/gift-earrings", name: "Gift Earrings" },
+];
+
+export const earringsStyle = [
+  { href: "/stud-earrings", name: "Stud Earrings" },
+  { href: "/hoop-earrings", name: "Hoop Earrings" },
+  { href: "/drop-earrings", name: "Drop Earrings" },
+  { href: "/chandelier-earrings", name: "Chandelier Earrings" },
+  { href: "/huggie-earrings", name: "Huggie Earrings" },
+  { href: "/ear-cuffs", name: "Ear Cuffs" },
+  { href: "/jhumka-earrings", name: "Jhumka Earrings" },
+  { href: "/threader-earrings", name: "Threader Earrings" },
+  { href: "/tassel-earrings", name: "Tassel Earrings" },
+];
+export const chainMetal = [
+  { href: "/gold-chains", name: "Gold Chains" },
+  { href: "/silver-chains", name: "Silver Chains" },
+  // { href: "/diamond-chains", name: "Diamond Chains" },
+  // { href: "/platinum-chains", name: "Platinum Chains" },
+  { href: "/rose-gold-chains", name: "Rose Gold Chains" },
+];
+
+export const chainOccasion = [
+  { href: "/wedding-chains", name: "Wedding Chains" },
+  // { href: "/engagement-chains", name: "Engagement Chains" },
+  // { href: "/party-chains", name: "Party Chains" },
+  { href: "/casual-chains", name: "Casual Chains" },
+  // { href: "/festive-chains", name: "Festive Chains" },
+  { href: "/office-chains", name: "Office Wear Chains" },
+  // { href: "/gift-chains", name: "Gift Chains" },
+];
+
+export const chainStyle = [
+  { href: "/mangalsutra-chains", name: "Mangalsutra Chains" },
+  { href: "/band-chains", name: "Band Chains" },
+  { href: "/plain-chains", name: "Plain Chains" },
+  // { href: "/rope-chains", name: "Rope Chains" },
+  // { href: "/box-chains", name: "Box Chains" },
+  // { href: "/cuban-chains", name: "Cuban Chains" },
+  { href: "/link-chains", name: "Link Chains" },
+  // { href: "/tennis-chains", name: "Tennis Chains" },
+];
+export const menJewelry = [
+  { href: "/men-chains", name: "Chains" },
+  { href: "/men-bracelets", name: "Bracelets" },
+  { href: "/men-rings", name: "Rings" },
+  { href: "/men-pendants", name: "Pendants" },
+  { href: "/men-kadas", name: "Kadas" },
+  { href: "/men-cufflinks", name: "Cufflinks" },
+  { href: "/men-earrings", name: "Earrings" },
+];
+export const kidsJewelry = [
+  { href: "/kids-pendants", name: "Pendants" },
+  { href: "/kids-bracelets", name: "Bracelets" },
+  { href: "/kids-rings", name: "Rings" },
+  { href: "/kids-payal", name: "Payal (Anklets)" },
+  { href: "/kids-bangles", name: "Bangles" },
+  { href: "/kids-earrings", name: "Earrings" },
+];
+export const couplesJewelry = [
+  { href: "/couple-rings", name: "Couple Rings" },
+  { href: "/couple-bands", name: "Couple Bands" },
+  { href: "/couple-bracelets", name: "Couple Bracelets" },
+  { href: "/matching-pendants", name: "Matching Pendants" },
+  { href: "/lock-and-key-jewelry", name: "Lock & Key Jewelry" },
+  { href: "/heart-jewelry", name: "Heart Jewelry" },
+  { href: "/personalized-jewelry", name: "Personalized Jewelry" },
+];
+
+
+export const styleBasedRings = [
+  { href: "/solitaire-rings", name: "Solitaire Rings" },
+  // { href: "/vintage-rings", name: "Vintage Rings" },
+  // { href: "/floral-rings", name: "Floral Rings" },
+  { href: "/infinity-rings", name: "Infinity Rings" },
+  // { href: "/crown-rings", name: "Crown Rings" },
+  { href: "/band-rings", name: "Band Rings" },
+  // { href: "/birthstone-rings", name: "Birthstone Rings" },
+  // { href: "/customized-name-rings", name: "Customized Name Rings" },
+  { href: "/adjustable-rings", name: "Adjustable Rings" },
+];
+export const goldCoins = [
+  { href: "/1gm-gold-coin", name: "1gm Gold Coin" },
+  { href: "/2gm-gold-coin", name: "2gm Gold Coin" },
+  { href: "/5gm-gold-coin", name: "5gm Gold Coin" },
+  { href: "/10gm-gold-coin", name: "10gm Gold Coin" },
+  { href: "/20gm-gold-coin", name: "20gm Gold Coin" },
+  { href: "/24k-gold-coin", name: "24K Gold Coin" },
+  { href: "/999-purity-gold-coin", name: "999 Purity Gold Coin" },
+  { href: "/lakshmi-gold-coin", name: "Lakshmi Gold Coin" },
+  { href: "/ganesh-gold-coin", name: "Ganesh Gold Coin" },
+  { href: "/engraved-gold-coin", name: "Engraved Gold Coin" },
 ];
 
 export const swatchLinks = [

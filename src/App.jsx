@@ -120,6 +120,8 @@ import CommingSoonPage from "./pages/other-pages/coming-soon";
 import CustomerFeedbackPage from "./pages/other-pages/customer-feedback";
 import WOW from "@/utlis/wow";
 import CompareProductsPage from "./pages/other-pages/compare-products";
+import store from "./store";
+
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {

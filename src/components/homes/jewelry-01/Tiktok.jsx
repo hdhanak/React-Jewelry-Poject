@@ -33,10 +33,9 @@ export default function Tiktok({ parentClass = "flat-spacing pt-0" }) {
     <section className={parentClass}>
       <div className="container">
         <div className="heading-section text-center wow fadeInUp">
-          <h3 className="heading">On Tiktok</h3>
+          <h3 className="heading">Women's Collections</h3>
           <p className="subheading text-secondary">
-            "Join us on TikTok for exclusive brand releases, unboxings, reviews,
-            and more!"
+           Jewellery that whispers your story—signed with elegance, sealed by Shree Ganesh Jewellers.
           </p>
         </div>
         <Swiper
@@ -58,16 +57,14 @@ export default function Tiktok({ parentClass = "flat-spacing pt-0" }) {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >
-                <img
-                  alt="poster"
-                  className={`poster ${
-                    activeVideoIndex === index ? "hide" : ""
-                  }`}
-                  src={slide.imgSrc}
-                  width={450}
-                  height={600}
-                />
-                <video
+              <img
+                alt="poster"
+                className={`poster moving-img loaded ${activeVideoIndex === index ? "hide" : ""}`}
+                src={slide.imgSrc}
+                width={450}
+                height={600}
+              />
+                {/* <video
                   className="hover-video"
                   ref={(el) => (videoRefs.current[index] = el)}
                   controls
@@ -79,7 +76,7 @@ export default function Tiktok({ parentClass = "flat-spacing pt-0" }) {
                 >
                   <source src={slide.videoSrc} type="video/mp4" />
                   Your browser does not support the video tag.
-                </video>
+                </video> */}
                 <div className="cls-content">
                   <div className="avatar avt-60 round">
                     <img
@@ -98,9 +95,9 @@ export default function Tiktok({ parentClass = "flat-spacing pt-0" }) {
                         {slide.title}
                       </Link>
                     </div>
-                    <span className="price text-button text-white">
+                    {/* <span className="price text-button text-white">
                       ${slide.price.toFixed(2)}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </div>

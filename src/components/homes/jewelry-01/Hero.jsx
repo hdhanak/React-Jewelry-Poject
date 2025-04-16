@@ -1,70 +1,62 @@
-import { slides8 } from "@/data/heroSlides";
+import { banners } from "@/data/collections";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Link } from "react-router-dom";
-import { Pagination } from "swiper/modules";
 export default function Hero() {
   return (
-    <div className="tf-slideshow slider-style2 slider-effect-fade">
-      <Swiper
-        dir="ltr"
-        spaceBetween={0}
-        loop={true}
-        autoplay={false}
-        slidesPerView={1}
-        breakpoints={{
-          768: {
-            slidesPerView: 1,
-          },
-        }}
-        modules={[Pagination]}
-        pagination={{
-          clickable: true,
-          el: ".spd57",
-        }}
-      >
-        {slides8.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="wrap-slider">
-              <img
-                alt={slide.alt}
-                src={slide.imgSrc}
-                width={1920}
-                height={752}
-              />
-              <div className="box-content">
-                <div className="container">
-                  <div className="content-slider">
-                    <div className="box-title-slider">
-                      <div className="fade-item fade-item-1 heading title-display">
-                        {slide.title}
-                      </div>
-                      <p className="fade-item fade-item-2 body-text-1">
-                        {slide.description}
-                      </p>
+    <section className="">
+      <div className="container">
+        <div
+          className="swiper tf-sw-mobile"
+          data-screen={767}
+          data-preview={1}
+          data-space={15}
+        >
+          <div className="swiper-wrapper grid-cls-v2">
+            {banners.map((banner, index) => (
+              <div key={index} className={`swiper-slide ${banner.className}`}>
+                <div className="banner-cls hover-img">
+                  <div className="img-style">
+                    <img
+                      data-src={banner.imgSrc}
+                      alt={banner.alt}
+                      src={banner.imgSrc}
+                      width={946}
+                      height={1260}
+                    />
+                  </div>
+                  <div className="cls-content">
+                    <div className="box-title-cls wow fadeInUp">
+                      <h3>
+                        <Link
+                          to={`/shop-default-grid`}
+                          className="text-white link"
+                        >
+                          {banner.title}
+                        </Link>
+                      </h3>
+                      <p className="text-white">{banner.description}</p>
                     </div>
-                    <div className="fade-item fade-item-3 box-btn-slider">
+                    <div
+                      className="wow fadeInUp"
+                      data-wow-delay={banner.wowDelay}
+                    >
                       <Link
                         to={`/shop-default-grid`}
-                        className="tf-btn btn-fill btn-white"
+                        className="tf-btn btn-fill btn-white radius-4"
                       >
-                        <span className="text">{slide.btnText}</span>
+                        <span className="text">{banner.btnText}</span>
                         <i className="icon icon-arrowUpRight" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="wrap-pagination">
-        <div className="container">
-          <div className="sw-dots sw-pagination-slider type-circle justify-content-center spd57" />
+            ))}
+          </div>
+          <div className="sw-pagination-mb sw-dots type-circle justify-content-center d-md-none d-flex" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

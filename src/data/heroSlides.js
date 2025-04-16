@@ -300,31 +300,117 @@ export const sliderData3 = [
   },
 ];
 
+// export const slides8 = [
+  // {
+  //   imgSrc: "/images/slider/slider-theme-new-17.jpg",
+  //   alt: "fashion-slideshow",
+  //     // title: "Luury Meets Fresh xStyle",
+  //     // title: "Shree Ganesh Jewellers",
+
+  //   // description:
+  //   //   "Experience the Essence of Elegance with Shree Ganesh – Jewelry That Shines Forever. Explore today!",
+  //   btnText: "Explore Collection",
+  // },
+  
+  // {
+  //   imgSrc: "/images/slider/slider-theme-new-12.jpg",
+  //   alt: "fashion-slideshow",
+  //   title: "",
+  //   description:
+  //     "",
+  //   btnText: "Shop New",
+  // },
+  // {
+  //   imgSrc: "/images/slider/slider-theme-new-20.jpg",
+  //   alt: "fashion-slideshow",
+  //   title: "",
+  //   description:
+  //     "",
+  //   btnText: "Shop New",
+  // },
+  // {
+  //   imgSrc: "/images/slider/slider-theme-blue-1.jpg",
+  //   alt: "fashion-slideshow",
+  //   title: "",
+  //   description:
+  //     "",
+  //   btnText: "Shop New",
+  // },
+
+
+// ];
 export const slides8 = [
   {
-    imgSrc: "/images/slider/slider-jewelry.jpg",
+    imgSrc: "/images/slider/test/1.jpg",
     alt: "fashion-slideshow",
-    title: "Sparkling New Arrivals",
-    description:
-      "Be the first to dazzle with our latest jewelry additions. Explore today!",
+      // title: "Luury Meets Fresh xStyle",
+      // title: "Shree Ganesh Jewellers",
+
+    // description:
+    //   "Experience the Essence of Elegance with Shree Ganesh – Jewelry That Shines Forever. Explore today!",
     btnText: "Explore Collection",
   },
+  
   {
-    imgSrc: "/images/slider/slider-jewelry2.jpg",
+    imgSrc: "/images/slider/test/2.jpg",
     alt: "fashion-slideshow",
-    title: "Wedding Rings",
-    description: "Quick! Grab limited-time deals before they’re gone.",
-    btnText: "Shop Sale",
-  },
-  {
-    imgSrc: "/images/slider/slider-jewelry3.jpg",
-    alt: "fashion-slideshow",
-    title: "Handcrafted Elegance",
+    title: "",
     description:
-      "Experience the artistry of our handcrafted jewelry collection. Browse today!",
+      "",
     btnText: "Shop New",
   },
+  {
+    imgSrc: "/images/slider/test/3.jpg",
+    alt: "fashion-slideshow",
+    title: "",
+    description:
+      "",
+    btnText: "Shop New",
+  },
+  {
+    imgSrc: "/images/slider/test/4.jpg",
+    alt: "fashion-slideshow",
+    title: "",
+    description:
+      "",
+    btnText: "Shop New",
+  },
+  // {
+  //   imgSrc: "/images/slider/test/5.jpg",
+  //   alt: "fashion-slideshow",
+  //   title: "",
+  //   description:
+  //     "",
+  //   btnText: "Shop New",
+  // },
+  // {
+  //   imgSrc: "/images/slider/test/8.jpg",
+  //   alt: "fashion-slideshow",
+  //   title: "",
+  //   description:
+  //     "",
+  //   btnText: "Shop New",
+  // },
+  {
+    imgSrc: "/images/slider/test/9.jpg",
+    alt: "fashion-slideshow",
+    title: "",
+    description:
+      "",
+    btnText: "Shop New",
+  },
+  // {
+  //   imgSrc: "/images/slider/test/6.jpg",
+  //   alt: "fashion-slideshow",
+  //   title: "",
+  //   description:
+  //     "",
+  //   btnText: "Shop New",
+  // },
+
+
 ];
+
 
 export const slidesData4 = [
   {

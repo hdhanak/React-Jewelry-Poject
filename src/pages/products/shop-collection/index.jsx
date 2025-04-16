@@ -5,6 +5,7 @@ import Collections from "@/components/products/Collections";
 import { Link } from "react-router-dom";
 import React from "react";
 import MetaComponent from "@/components/common/MetaComponent";
+import Header10 from "@/components/headers/Header10";
 const metadata = {
   title: "Shop Collection || Modave - Multipurpose Reactjs eCommerce Template",
   description: "Modave - Multipurpose Reactjs eCommerce Template",
@@ -14,7 +15,7 @@ export default function ShopCollectionPage() {
     <>
       <MetaComponent meta={metadata} />
       <Topbar6 bgColor="bg-main" />
-      <Header1 />
+      <Header10 />
       <div
         className="page-title"
         style={{ backgroundImage: "url(/images/section/page-title.jpg)" }}

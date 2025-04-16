@@ -1,4 +1,4 @@
-import { categories3 } from "@/data/collections";
+import { categories3, categories4 } from "@/data/collections";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Link } from "react-router-dom";
@@ -44,14 +44,37 @@ export default function Categories() {
                 <div className="collection-circle hover-img">
                   {/* Link is added directly in JSX */}
                   <Link to={`/shop-categories-top`} className="img-style">
-                    <img
+                    {/* <img
                       className="lazyload"
                       data-src={category.imgSrc}
                       alt="collection-img"
                       src={category.imgSrc}
                       width={380}
                       height={380}
-                    />
+                    /> */}
+                    {/* <img
+                    loading="lazy"
+                    className="img-style"
+                    src={category.imgSrc}
+                    alt="collection-img"
+                    width={380}
+                    height={380}
+                  /> */}
+                <img
+                  loading="lazy"
+                  className="img-style"
+                  src={category.imgSrc} // Default image
+                  // srcSet={`
+                  //   ${category.imgSrcSmall} 200w,
+                  //   ${category.imgSrcMedium} 380w,
+                  //   ${category.imgSrcLarge} 800w
+                  // `}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                  alt="collection-img"
+                  width={380}
+                  height={380}
+                />
+
                   </Link>
                   <div className="collection-content text-center">
                     <div>

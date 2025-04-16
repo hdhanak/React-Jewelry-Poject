@@ -18,9 +18,24 @@ export default function ProductsCards6({ product }) {
     isAddedToCartProducts,
   } = useContextElement();
 
+  // useEffect(() => {
+  //   setCurrentImage(product.imgSrc);
+  // }, [product]);
   useEffect(() => {
-    setCurrentImage(product.imgSrc);
+    if (product.product_images?.length) {
+      // Parse the first image object
+      const firstImageObject = JSON.parse(product.product_images[0]);
+      
+      // Set the image if it exists
+      console.log(firstImageObject.image,"firstImageObject.image");
+      
+      if (firstImageObject.image) {
+        const imgSrc = `http://localhost:8000/uploads/product_images/${firstImageObject.image}`
+        setCurrentImage(imgSrc);
+      }
+    }
   }, [product]);
+
   return (
     <div
       className="card-product style-list"
@@ -38,13 +53,13 @@ export default function ProductsCards6({ product }) {
           />
           <img
             className="lazyload img-hover"
-            src={product.imgHover}
+            src={currentImage}
             alt={product.title}
             width={600}
             height={800}
           />
         </Link>
-        {product.isOnSale && (
+        {product?.isOnSale && (
           <div className="on-sale-wrap">
             <span className="on-sale-item">-25%</span>
           </div>
@@ -55,18 +70,16 @@ export default function ProductsCards6({ product }) {
           {product.title}
         </Link>
         <span className="price current-price">
-          {product.oldPrice && (
+          {/* {product.oldPrice && (
             <span className="old-price">${product.oldPrice.toFixed(2)}</span>
-          )}{" "}
-          ${product.price?.toFixed(2)}
+          )}{" "} */}
+          {"\u20B9"}{product.product_today_price}
         </span>
         <p className="description text-secondary text-line-clamp-2">
-          The garments labelled as Committed are products that have been
-          produced using sustainable fibres or processes, reducing their
-          environmental impact.
+        {product.product_detail}
         </p>
         <div className="variant-wrap-list">
-          {product.colors && (
+          {/* {product.colors && (
             <ul className="list-color-product">
               {product.colors.map((color, index) => (
                 <li
@@ -96,7 +109,7 @@ export default function ProductsCards6({ product }) {
               <span className="size-item box-icon">XL</span>
               <span className="size-item box-icon disable">XXL</span>
             </div>
-          )}
+          )} */}
           <div className="list-product-btn">
             <a
               onClick={() => addProductToCart(product.id)}

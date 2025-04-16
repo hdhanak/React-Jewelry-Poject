@@ -6,9 +6,9 @@ export default function ShopGram4() {
   return (
     <section>
       <div className="heading-section text-center wow fadeInUp">
-        <h3 className="heading">Shop Instagram</h3>
+        <h3 className="heading">Shop Silver</h3>
         <p className="subheading text-secondary">
-          Elevate your wardrobe with fresh finds today!
+        For those who know that silver never plays second.
         </p>
       </div>
 

@@ -665,54 +665,54 @@ export const collections9 = [
 
 export const categories3 = [
   {
-    imgSrc: "/images/collections/collection-circle/cls-circle12.jpg",
+    imgSrc: "/images/collections/collection-circle/Necklaces.png",
     title: "Necklaces",
     count: "12 items",
   },
   {
-    imgSrc: "/images/collections/collection-circle/cls-circle13.jpg",
+    imgSrc: "/images/collections/collection-circle/slider-jewelry-13.png",
     title: "Rings",
     count: "16 items",
   },
   {
-    imgSrc: "/images/collections/collection-circle/cls-circle14.jpg",
+    imgSrc: "/images/collections/collection-circle/Bracelets.png",
     title: "Bracelets",
     count: "18 items",
   },
   {
-    imgSrc: "/images/collections/collection-circle/cls-circle15.jpg",
+    imgSrc: "/images/collections/collection-circle/Earnings-Casual.jpg",
     title: "Earnings",
     count: "24 items",
   },
   {
-    imgSrc: "/images/collections/collection-circle/cls-circle16.jpg",
-    title: "Charm & Dangles",
+    imgSrc: "/images/collections/collection-circle/bangals.jpg",
+    title: "Bangals",
     count: "08 items",
   },
   {
-    imgSrc: "/images/collections/collection-circle/cls-circle17.jpg",
-    title: "Gift Ideas",
+    imgSrc: "/images/collections/collection-circle/slider-jewelry-6.png",
+    title: "Wedding Earnings",
     count: "26 items",
   },
   {
-    imgSrc: "/images/collections/collection-circle/cls-circle16.jpg",
-    title: "Charm & Dangles",
+    imgSrc: "/images/collections/collection-circle/Men's Ring.png",
+    title: "Men's Rings",
     count: "12 items",
   },
 ];
 
 export const collections10 = [
   {
-    imgSrc: "/images/collections/banner-collection/banner-cls28.jpg",
+    imgSrc: "/images/collections/banner-collection/women-banner-2.jpg",
     alt: "banner-cls",
-    title: "Capsule Collection",
-    description: "Reserved for special occasions",
+    title: "Wedding Collection",
+    description: "A perfect match for your perfect day.",
   },
   {
-    imgSrc: "/images/collections/banner-collection/banner-cls29.jpg",
+    imgSrc: "/images/collections/banner-collection/kids-banner-1.jpg",
     alt: "banner-cls",
-    title: "New Arrival",
-    description: "Reserved for special occasions",
+    title: "Kids' Collection",
+    description: "Sparkle Like a Star!",
   },
   // Add more items here if needed
 ];
@@ -728,7 +728,7 @@ export const banners = [
     className: "item1",
   },
   {
-    imgSrc: "/images/collections/banner-collection/banner-cls24.jpg",
+    imgSrc: "/images/collections/banner-collection/Slider-Ring-1.jpg",
     alt: "banner-cls",
     title: "Beaded pendant earrings",
     description:
@@ -738,7 +738,7 @@ export const banners = [
     className: "item2",
   },
   {
-    imgSrc: "/images/collections/banner-collection/banner-cls25.jpg",
+    imgSrc: "/images/collections/banner-collection/Slider-Earrings-1.jpg",
     alt: "banner-cls",
     title: "Long raffia earrings",
     description: "Contains at least 100% recycled materials",

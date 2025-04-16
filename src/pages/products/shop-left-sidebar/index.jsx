@@ -21,7 +21,7 @@ export default function ShopLeftSidebarPage() {
       <Header10 />
       <div
         className="page-title"
-        style={{ backgroundImage: "url(/images/section/page-title.jpg)" }}
+        style={{ backgroundImage: "url(/images/section/theme-slider-01.jpg)" }}
       >
         <div className="container-full">
           <div className="row">
@@ -42,9 +42,9 @@ export default function ShopLeftSidebarPage() {
           </div>
         </div>
       </div>
-      <ShopCategories2 />
+      {/* <ShopCategories2 /> */}
       <Products11 />
-      <Footer1 />
+      <Footer1/>
     </>
   );
 }

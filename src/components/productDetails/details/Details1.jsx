@@ -9,6 +9,8 @@ import ProductStikyBottom from "../ProductStikyBottom";
 export default function Details1({ product }) {
   const [activeColor, setActiveColor] = useState("gray");
   const [quantity, setQuantity] = useState(1);
+  const [currentImage, setCurrentImage] = useState(product.imgSrc);
+  
   const {
     addProductToCart,
     isAddedToCartProducts,
@@ -19,6 +21,20 @@ export default function Details1({ product }) {
     cartProducts,
     updateQuantity,
   } = useContextElement();
+  useEffect(() => {
+    if (product.product_images?.length) {
+      // Parse the first image object
+      const firstImageObject = JSON.parse(product.product_images[0]);
+      
+      // Set the image if it exists
+      console.log(firstImageObject.image,"firstImageObject.image");
+      
+      if (firstImageObject.image) {
+        const imgSrc = `http://localhost:8000/uploads/product_images/${firstImageObject.image}`
+        setCurrentImage(imgSrc);
+      }
+    }
+  }, [product]);
 
   return (
     <section className="flat-spacing">
@@ -31,7 +47,7 @@ export default function Details1({ product }) {
                 <Slider1
                   setActiveColor={setActiveColor}
                   activeColor={activeColor}
-                  firstItem={product.imgSrc}
+                  firstItem={currentImage}
                 />
               </div>
             </div>
@@ -43,10 +59,13 @@ export default function Details1({ product }) {
                 <div className="tf-product-info-list other-image-zoom">
                   <div className="tf-product-info-heading">
                     <div className="tf-product-info-name">
-                      <div className="text text-btn-uppercase">Clothing</div>
-                      <h3 className="name">{product.title}</h3>
+                      <div className="text text-btn-uppercase">{product.product_name}</div>
+                      {/* <div className="product-info" style={"text-align: left"}> */}
+                        <h3 className="name">{product.product_title}</h3>
+                        <p className="name" style={{ textAlign: "justify" }}>{product.product_detail}</p>
+                      {/* </div>       */}
                       <div className="sub">
-                        <div className="tf-product-info-rate">
+                       {/* <div className="tf-product-info-rate">
                           <div className="list-star">
                             <i className="icon icon-star" />
                             <i className="icon icon-star" />
@@ -57,22 +76,23 @@ export default function Details1({ product }) {
                           <div className="text text-caption-1">
                             (134 reviews)
                           </div>
-                        </div>
-                        <div className="tf-product-info-sold">
+                        </div>*/}
+                        {/* <div className="tf-product-info-sold">
                           <i className="icon icon-lightning" />
                           <div className="text text-caption-1">
                             18&nbsp;sold in last&nbsp;32&nbsp;hours
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                     <div className="tf-product-info-desc">
                       <div className="tf-product-info-price">
-                        <h5 className="price-on-sale font-2">
-                          {" "}
-                          ${product.price.toFixed(2)}
-                        </h5>
-                        {product.oldPrice ? (
+                      <h5 className="product-price">
+                      <span className="label">Price:</span> 
+                      <span className="value">₹{product.product_today_price}</span>
+                    </h5>
+
+                        {/* {product.oldPrice ? (
                           <>
                             <div className="compare-at-price font-2">
                               {" "}
@@ -84,28 +104,43 @@ export default function Details1({ product }) {
                           </>
                         ) : (
                           ""
-                        )}
+                        )} */}
                       </div>
-                      <p>
-                        The garments labelled as Committed are products that
-                        have been produced using sustainable fibres or
-                        processes, reducing their environmental impact.
-                      </p>
-                      <div className="tf-product-info-liveview">
-                        <i className="icon icon-eye" />
-                        <p className="text-caption-1">
-                          <span className="liveview-count">28</span> people are
-                          viewing this right now
-                        </p>
-                      </div>
+                      {/* <p>
+                      {product.product_today_price}
+                      </p> */}
+                      <h5 className="product-details-title">Product Specifications</h5>
+                      <div className="product-specs">
+  {/* <h5 className="specs-title">Product Details</h5> */}
+  <table className="specs-table">
+    <tbody>
+      <tr><td>Metal</td><td>{product.metal_name}</td></tr>
+      <tr><td>Gold Purity</td><td>{product.gold_purity}K</td></tr>
+      <tr><td>Gross Weight</td><td>{product.gross_weight} g</td></tr>
+      <tr><td>Height</td><td>{product.height} mm</td></tr>
+      <tr><td>Width</td><td>{product.width} mm</td></tr>
+      <tr><td>Size</td><td>{product.size}</td></tr>
+      {/* {product.no_of_diamonds > 0 && (
+        <>
+          <tr><td>Diamonds</td><td>{product.no_of_diamonds}</td></tr>
+          <tr><td>Clarity</td><td>{product.diamond_clarity}</td></tr>
+          <tr><td>Color</td><td>{product.diamond_color}</td></tr>
+          <tr><td>Weight</td><td>{product.diamond_weight} ct</td></tr>
+        </>
+      )} */}
+    </tbody>
+  </table>
+</div>
+
+
                     </div>
                   </div>
                   <div className="tf-product-info-choose-option">
-                    <ColorSelect
+                    {/* <ColorSelect
                       setActiveColor={setActiveColor}
                       activeColor={activeColor}
                     />
-                    <SizeSelect />
+                    <SizeSelect /> */}
                     <div className="tf-product-info-quantity">
                       <div className="title mb_12">Quantity:</div>
                       <QuantitySelect
@@ -140,12 +175,12 @@ export default function Details1({ product }) {
                             $
                             {isAddedToCartProducts(product.id)
                               ? (
-                                  product.price *
+                                  product.product_today_price *
                                   cartProducts.filter(
                                     (elm) => elm.id == product.id
                                   )[0].quantity
                                 ).toFixed(2)
-                              : (product.price * quantity).toFixed(2)}{" "}
+                              : (product.product_today_price * quantity).toFixed(2)}{" "}
                           </span>
                         </a>
                         <a
@@ -192,7 +227,7 @@ export default function Details1({ product }) {
                             Delivery &amp; Return
                           </p>
                         </a>
-                        <a
+                        {/* <a
                           href="#ask_question"
                           data-bs-toggle="modal"
                           className="tf-product-extra-icon"
@@ -211,9 +246,9 @@ export default function Details1({ product }) {
                             <i className="icon-share" />
                           </div>
                           <p className="text-caption-1">Share</p>
-                        </a>
+                        </a> */}
                       </div>
-                      <div className="tf-product-info-time">
+                      {/* <div className="tf-product-info-time">
                         <div className="icon">
                           <i className="icon-timer" />
                         </div>
@@ -230,7 +265,7 @@ export default function Details1({ product }) {
                           Return within <span>45 days</span> of purchase. Duties
                           &amp; taxes are non-refundable.
                         </p>
-                      </div>
+                      </div> */}
                       <div className="dropdown dropdown-store-location">
                         <div
                           className="dropdown-title dropdown-backdrop"
@@ -270,25 +305,25 @@ export default function Details1({ product }) {
                       </li>
                       <li>
                         <p className="text-caption-1">Vendor:</p>
-                        <p className="text-caption-1 text-1">Modave</p>
+                        <p className="text-caption-1 text-1">Shree Ganesh Jewellers</p>
                       </li>
                       <li>
                         <p className="text-caption-1">Available:</p>
-                        <p className="text-caption-1 text-1">Instock</p>
+                        <p className="text-caption-1 text-1">{product.status==true ? "Instock" : "Out of stock"}</p>
                       </li>
                       <li>
                         <p className="text-caption-1">Categories:</p>
                         <p className="text-caption-1">
                           <a href="#" className="text-1 link">
-                            Clothes
+                          Jewellery
                           </a>
                           ,
                           <a href="#" className="text-1 link">
-                            women
+                            {product.gender == 1 ? 'Women': "men"}
                           </a>
                           ,
                           <a href="#" className="text-1 link">
-                            T-shirt
+                            {product.product_name}
                           </a>
                         </p>
                       </li>

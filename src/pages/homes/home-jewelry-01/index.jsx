@@ -14,6 +14,10 @@ import Tiktok from "@/components/homes/jewelry-01/Tiktok";
 import React from "react";
 
 import MetaComponent from "@/components/common/MetaComponent";
+import Hero1 from "@/components/homes/jewelry-01/Hero1";
+import ShopGram from "@/components/common/ShopGram";
+import ShopGram4 from "@/components/common/ShopGram4";
+import Hero2 from "@/components/homes/jewelry-01/Hero2";
 const metadata = {
   title: "Home Jewelry 01 || Modave - Multipurpose Reactjs eCommerce Template",
   description: "Modave - Multipurpose Reactjs eCommerce Template",
@@ -25,16 +29,18 @@ export default function HomeJeweleryPage1() {
       <MetaComponent meta={metadata} />
       <Topbar3 />
       <Header10 />
-      <Hero />
+      <Hero2 />
+{/* <Hero /> */}
+      
       <Tiktok parentClass="flat-spacing" />
       <Categories />
       <Products4 parentClass="flat-spacing pt-0" />
       <Collections />
       <Products2 parentClass="flat-spacing pt-0" />
-      <Testimonials3 />
-      <Blogs />
-      <Features parentClass="flat-spacing pt-0" />
-      <Shopgram />
+      {/* <Testimonials3 />
+      <Blogs /> */}
+      {/* <Features parentClass="flat-spacing pt-0" /> */}
+      <ShopGram4 />
       <Footer1 />
     </>
   );

@@ -9,7 +9,7 @@ import ScrollTop from "../common/ScrollTop";
 import { footerLinks, socialLinks } from "@/data/footerLinks";
 export default function Footer1({
   border = true,
-  dark = false,
+  dark = true,
   hasPaddingBottom = false,
 }) {
   const [success, setSuccess] = useState(true);
@@ -80,7 +80,7 @@ export default function Footer1({
     <>
       <footer
         id="footer"
-        className={`footer ${dark ? "" : "bg-main"} ${
+        className={`footer ${dark ? "bg-main" : ""} ${
           hasPaddingBottom ? "has-pb" : ""
         } `}
       >
@@ -268,7 +268,7 @@ export default function Footer1({
                       <p className="text-caption-1">
                         ©{new Date().getFullYear()} Modave. All Rights Reserved.
                       </p>
-                      <div className="tf-cur justify-content-end">
+                      {/* <div className="tf-cur justify-content-end">
                         <div className="tf-currencies">
                           <CurrencySelect light={dark ? true : false} />
                         </div>
@@ -279,9 +279,9 @@ export default function Footer1({
                             }`}
                           />
                         </div>
-                      </div>
+                      </div> */}
                     </div>
-                    <div className="tf-payment">
+                    {/* <div className="tf-payment">
                       <p className="text-caption-1">Payment:</p>
                       <ul>
                         <li>
@@ -333,7 +333,7 @@ export default function Footer1({
                           />
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

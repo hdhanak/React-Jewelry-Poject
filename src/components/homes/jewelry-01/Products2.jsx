@@ -1,5 +1,5 @@
 import ProductCard1 from "@/components/productCards/ProductCard1";
-import { products15 } from "@/data/products";
+import { menCollections, products15 } from "@/data/products";
 import React from "react";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,9 +9,9 @@ export default function Products2({ parentClass = "" }) {
     <section className={parentClass}>
       <div className="container">
         <div className="heading-section text-center wow fadeInUp">
-          <h3 className="heading">Trendy Collection</h3>
+          <h3 className="heading">Men’s Trendy Collection</h3>
           <p className="subheading text-secondary">
-            Fresh styles just in! Elevate your look.
+          Wear Your Legacy.
           </p>
         </div>
         <Swiper
@@ -30,7 +30,7 @@ export default function Products2({ parentClass = "" }) {
             el: ".spd59",
           }}
         >
-          {products15.slice(4).map((product, i) => (
+          {menCollections.map((product, i) => (
             <SwiperSlide key={i} className="swiper-slide">
               <ProductCard1 product={product} />
             </SwiperSlide>

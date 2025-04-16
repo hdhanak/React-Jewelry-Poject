@@ -5,11 +5,18 @@ import GridView from "./GridView";
 import { useEffect, useReducer, useState } from "react";
 import FilterModal from "./FilterModal";
 import { initialState, reducer } from "@/reducer/filterReducer";
-import { productMain } from "@/data/products";
+// import { productMain } from "@/data/products";
 import FilterMeta from "./FilterMeta";
 import FilterSidebar from "./FilterSidebar";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchProducts } from "../../reducer/productSlice";
+import axios from "axios";
 
 export default function Products11() {
+  const dispatchRedux = useDispatch();
+  const [productMain, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   const [activeLayout, setActiveLayout] = useState(4);
   const [state, dispatch] = useReducer(reducer, initialState);
   const {
@@ -72,8 +79,30 @@ export default function Products11() {
       dispatch({ type: "CLEAR_FILTER" });
     },
   };
+  useEffect(() => {
+    console.log("1");
+    
+    axios
+      .post("http://localhost:8000/v1/admin/get-all-product", {
+        // If your POST API requires some data to send:
+        // category: "jewelry", // Example body data
+        // limit: 10
+      })
+      .then((response) => {
+        console.log("response.data:",response.data);
+
+        setProducts(response.data.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        setLoading(false);
+      });
+  }, []);
 
   useEffect(() => {
+    console.log("2");
+
     let filteredArrays = [];
 
     if (brands.length) {
@@ -142,6 +171,8 @@ export default function Products11() {
     }
     dispatch({ type: "SET_CURRENT_PAGE", payload: 1 });
   }, [filtered, sortingOption]);
+  console.log(productMain,"productMain");
+
   return (
     <>
       <section className="flat-spacing">
@@ -192,14 +223,16 @@ export default function Products11() {
               <div className="col-xl-9">
                 {activeLayout == 1 ? (
                   <div className="tf-list-layout wrapper-shop" id="listLayout">
-                    <Listview products={sorted} />
+                    {/* <Listview products={sorted} /> */}
+                    <Listview products={productMain} />
+
                   </div>
                 ) : (
                   <div
                     className={`tf-grid-layout wrapper-shop tf-col-${activeLayout}`}
                     id="gridLayout"
                   >
-                    <GridView products={sorted} />
+                    <GridView products={productMain} />
                   </div>
                 )}
               </div>

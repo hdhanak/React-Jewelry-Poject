@@ -42,7 +42,7 @@ export default function ShopRightSidebarPage() {
         </div>
       </div>
       <Products12 />
-      <Footer1 />
+      <Footer1 hasPaddingBottom/>
     </>
   );
 }

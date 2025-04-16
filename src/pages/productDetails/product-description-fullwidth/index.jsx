@@ -11,6 +11,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import MetaComponent from "@/components/common/MetaComponent";
+import Header10 from "@/components/headers/Header10";
 const metadata = {
   title:
     "Product Detail Description fullwidth || Modave - Multipurpose Reactjs eCommerce Template",
@@ -26,7 +27,7 @@ export default function ProductDescriptionFullwidthPage() {
     <>
       <MetaComponent meta={metadata} />
       <Topbar6 bgColor="bg-main" />
-      <Header1 />
+      <Header10 />
       <Breadcumb product={product} />
       <Details1FullWidth product={product} />
       <Descriptions1 />

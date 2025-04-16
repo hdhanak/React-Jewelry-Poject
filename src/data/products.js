@@ -838,7 +838,7 @@ export const products9 = [
 export const product10 = [
   {
     id: 39,
-    imgSrc: "/images/gallery/gallery-beauty1.jpg",
+    imgSrc: "/images/gallery/silver-gallery-4.jpg",
     alt: "image-gallery",
     delay: ".1s",
     title: "Facial Hydrating Cream",
@@ -846,7 +846,7 @@ export const product10 = [
   },
   {
     id: 40,
-    imgSrc: "/images/gallery/gallery-beauty2.jpg",
+    imgSrc: "/images/gallery/silver-gallery-19.jpg",
     alt: "image-gallery",
     delay: ".2s",
     title: "Facial Hydrating Cream",
@@ -854,7 +854,7 @@ export const product10 = [
   },
   {
     id: 41,
-    imgSrc: "/images/gallery/gallery-beauty3.jpg",
+    imgSrc: "/images/gallery/silver-gallery-18.jpg",
     alt: "image-gallery",
     delay: ".3s",
     title: "Facial Hydrating Cream",
@@ -862,7 +862,7 @@ export const product10 = [
   },
   {
     id: 42,
-    imgSrc: "/images/gallery/gallery-beauty4.jpg",
+    imgSrc: "/images/gallery/silver-gallery-26.jpg",
     alt: "image-gallery",
     delay: ".4s",
     title: "Facial Hydrating Cream",
@@ -870,7 +870,7 @@ export const product10 = [
   },
   {
     id: 43,
-    imgSrc: "/images/gallery/gallery-beauty5.jpg",
+    imgSrc: "/images/gallery/silver-gallery-7.jpg",
     alt: "image-gallery",
     delay: ".5s",
     title: "Facial Hydrating Cream",
@@ -878,7 +878,7 @@ export const product10 = [
   },
   {
     id: 44,
-    imgSrc: "/images/gallery/gallery-beauty6.jpg",
+    imgSrc: "/images/gallery/silver-gallery-13.jpg",
     alt: "image-gallery",
     delay: ".6s",
     title: "Facial Hydrating Cream",
@@ -1260,37 +1260,37 @@ export const product13 = [
 export const products14 = [
   {
     id: 72,
-    imgSrc: "/images/collections/cls-tiktok9.jpg",
+    imgSrc: "/images/collections/women-collection-33.jpg",
     videoSrc: "/images/video/skin-care1.mp4",
     avatarSrc: "/images/avatar/jewelry-3.jpg",
-    title: "Asher Recycled Rings",
+    title: "Classic Gold Mangalsutra",
     price: 60.0,
     delay: "0s",
   },
   {
     id: 73,
-    imgSrc: "/images/collections/cls-tiktok10.jpg",
+    imgSrc: "/images/collections/women-collection-11.jpg",
     videoSrc: "/images/video/skin-care2.mp4",
     avatarSrc: "/images/avatar/jewelry-4.jpg",
-    title: "Charm Recycled Small",
+    title: "Luxe Hoop Earrings",
     price: 60.0,
     delay: "0.1s",
   },
   {
     id: 74,
-    imgSrc: "/images/collections/cls-tiktok11.jpg",
+    imgSrc: "/images/collections/women-collection-66.jpg",
     videoSrc: "/images/video/skin-care3.mp4",
     avatarSrc: "/images/avatar/jewelry-5.jpg",
-    title: "Mia Amalfi Bracelet Gold",
+    title: "Bridal Kundan Haar",
     price: 60.0,
     delay: "0.2s",
   },
   {
     id: 75,
-    imgSrc: "/images/collections/cls-tiktok12.jpg",
+    imgSrc: "/images/collections/women-collection-88.jpg",
     videoSrc: "/images/video/skin-care1.mp4",
     avatarSrc: "/images/avatar/jewelry-6.jpg",
-    title: "Pilgrim Love Chain",
+    title: "Elegant Rose Gold Band",
     price: 60.0,
     delay: "0.3s",
   },
@@ -1300,9 +1300,48 @@ export const products15 = [
     id: 76,
     title: "Asher Recycled Rings 4-in-1",
     price: 39.99,
-    imgSrc: "/images/products/jewelry/jewelry-1.jpg",
-    imgHover: "/images/products/jewelry/jewelry-2.jpg",
+    imgSrc: "/images/products/jewelry/bangles-1.jpg",
+    imgHover: "/images/products/jewelry/bangles-1.jpg",
     isOnisOnSale: false,
+  },
+  {
+    id: 79,
+    title: "Asher Recycled Rings 4-in-1",
+    price: 219.99,
+    oldPrice: 98.0,
+    imgSrc: "/images/products/jewelry/Ring-1.jpg",
+    imgHover: "/images/products/jewelry/Ring-1.jpg",
+    colors: [
+      {
+        bgColor: "bg-grey",
+        imgSrc: "/images/products/jewelry/jewelry-8.jpg",
+      },
+      {
+        bgColor: "bg-main",
+        imgSrc: "/images/products/jewelry/jewelry-9.jpg",
+      },
+    ],
+  },
+  {
+    id: 78,
+    title: "Mia Amalfi Bracelet Gold",
+    price: 129.99,
+    oldPrice: 98.0,
+    imgSrc: "/images/products/jewelry/couple-1.jpg",
+    imgHover: "/images/products/jewelry/couple-1.jpg",
+    addToCart: "Quick Add",
+    sizes: ["S", "M", "L", "XL"],
+    countdown: 1007500,
+    colors: [
+      {
+        bgColor: "bg-light-green",
+        imgSrc: "/images/products/jewelry/jewelry-6.jpg",
+      },
+      {
+        bgColor: "bg-light-grey",
+        imgSrc: "/images/products/jewelry/jewelry-7.jpg",
+      },
+    ],
   },
   {
     id: 77,
@@ -1310,8 +1349,8 @@ export const products15 = [
     hotSale: true,
     title: "Charm Recycled Small Hoop Earrings",
     price: 79.99,
-    imgSrc: "/images/products/jewelry/jewelry-3.jpg",
-    imgHover: "/images/products/jewelry/jewelry-4.jpg",
+    imgSrc: "/images/products/jewelry/jewellery-2.jpg",
+    imgHover: "/images/products/jewelry/jewellery-2.jpg",
     isOnisOnSale: true,
     salePercentage: "25%",
     colors: [
@@ -1329,79 +1368,21 @@ export const products15 = [
       },
     ],
   },
-  {
-    id: 78,
-    title: "Mia Amalfi Bracelet Gold",
-    price: 129.99,
-    oldPrice: 98.0,
-    imgSrc: "/images/products/jewelry/jewelry-6.jpg",
-    imgHover: "/images/products/jewelry/jewelry-7.jpg",
-    addToCart: "Quick Add",
-    sizes: ["S", "M", "L", "XL"],
-    countdown: 1007500,
-    colors: [
-      {
-        bgColor: "bg-light-green",
-        imgSrc: "/images/products/jewelry/jewelry-6.jpg",
-      },
-      {
-        bgColor: "bg-light-grey",
-        imgSrc: "/images/products/jewelry/jewelry-7.jpg",
-      },
-    ],
-  },
-  {
-    id: 79,
-    title: "Pilgrim Love Chain Bracelet Gold",
-    price: 219.99,
-    oldPrice: 98.0,
-    imgSrc: "/images/products/jewelry/jewelry-8.jpg",
-    imgHover: "/images/products/jewelry/jewelry-9.jpg",
-    colors: [
-      {
-        bgColor: "bg-grey",
-        imgSrc: "/images/products/jewelry/jewelry-8.jpg",
-      },
-      {
-        bgColor: "bg-main",
-        imgSrc: "/images/products/jewelry/jewelry-9.jpg",
-      },
-    ],
-  },
+ 
   {
     id: 80,
-    imgSrc: "/images/products/jewelry/jewelry-11.jpg",
-    imgHover: "/images/products/jewelry/jewelry-12.jpg",
-    title: "Pilgrim Care Recycled Semi-Hoop",
+    imgSrc: "/images/products/jewelry/Earings-1.jpg",
+    imgHover: "/images/products/jewelry/Earings-1.jpg",
+    title: "Penelope Recycled Earrings",
     price: 39.99,
     sizes: ["S", "M", "L", "XL"],
     isOnSale: false,
   },
   {
-    id: 81,
-    imgSrc: "/images/products/jewelry/jewelry-13.jpg",
-    imgHover: "/images/products/jewelry/jewelry-14.jpg",
-    title: "Charm Recycled Triangle Pendant",
-    price: 129.99,
-    oldPrice: 98.0,
-    sizes: ["S", "M", "L", "XL"],
-    colors: [
-      {
-        bgColor: "bg-light-green",
-        imgSrc: "/images/products/jewelry/jewelry-13.jpg",
-      },
-      {
-        bgColor: "bg-grey",
-        imgSrc: "/images/products/jewelry/jewelry-14.jpg",
-      },
-    ],
-    isOnSale: false,
-  },
-  {
     id: 82,
-    imgSrc: "/images/products/jewelry/jewelry-15.jpg",
-    imgHover: "/images/products/jewelry/jewelry-16.jpg",
-    title: "Penelope Recycled Earrings",
+    imgSrc: "/images/products/jewelry/jewellery-7.jpg",
+    imgHover: "/images/products/jewelry/jewellery-7.jpg",
+    title: "Pilgrim Love Chain Bracelet Gold",
     price: 219.99,
     oldPrice: 98.0,
     sizes: ["S", "M", "L", "XL"],
@@ -1418,14 +1399,173 @@ export const products15 = [
     ],
   },
   {
-    id: 83,
-    imgSrc: "/images/products/jewelry/jewelry-17.jpg",
-    imgHover: "/images/products/jewelry/jewelry-18.jpg",
-    title: "Faux-leather trousers",
-    price: 79.99,
+    id: 81,
+    imgSrc: "/images/products/jewelry/jewellery-6.jpg",
+    imgHover: "/images/products/jewelry/jewellery-6.jpg",
+    title: "Charm Recycled Circle Earrings",
+    price: 129.99,
+    oldPrice: 98.0,
+    sizes: ["S", "M", "L", "XL"],
+    colors: [
+      {
+        bgColor: "bg-light-green",
+        imgSrc: "/images/products/jewelry/jewelry-13.jpg",
+      },
+      {
+        bgColor: "bg-grey",
+        imgSrc: "/images/products/jewelry/jewelry-14.jpg",
+      },
+    ],
+    isOnSale: false,
+  },
+ 
+  // {
+  //   id: 83,
+  //   imgSrc: "/images/products/jewelry/jewelry-17.jpg",
+  //   imgHover: "/images/products/jewelry/jewelry-18.jpg",
+  //   title: "Faux-leather trousers",
+  //   price: 79.99,
+  //   sizes: ["S", "M", "L", "XL"],
+  //   isOnSale: true,
+  // },
+];
+export const menCollections = [
+  {
+    id: 82,
+    imgSrc: "/images/products/jewelry/men/men-15.jpg",
+    imgHover: "/images/products/jewelry/men/men-9.jpg",
+    title: "Pilgrim Love Chain Bracelet Gold",
+    price: 219.99,
+    oldPrice: 98.0,
     sizes: ["S", "M", "L", "XL"],
     isOnSale: true,
+    colors: [
+      {
+        bgColor: "bg-grey-2",
+        imgSrc: "/images/products/jewelry/jewelry-15.jpg",
+      },
+      {
+        bgColor: "bg-light-orange",
+        imgSrc: "/images/products/jewelry/jewelry-16.jpg",
+      },
+    ],
   },
+  {
+    id: 77,
+    oldPrice: 98.0,
+    hotSale: true,
+    title: "Charm Recycled Small Hoop Earrings",
+    price: 79.99,
+    imgSrc: "/images/products/jewelry/men/men-28.jpg",
+    imgHover: "/images/products/jewelry/men/men-2.jpg",
+    isOnisOnSale: true,
+    salePercentage: "25%",
+    colors: [
+      {
+        bgColor: "bg-light-pink",
+        imgSrc: "/images/products/jewelry/men/men-3.jpg",
+      },
+      {
+        bgColor: "bg-dark-grey",
+        imgSrc: "/images/products/jewelry/jewelry-4.jpg",
+      },
+      {
+        bgColor: "bg-main",
+        imgSrc: "/images/products/jewelry/jewelry-5.jpg",
+      },
+    ],
+  },
+  
+  {
+    id: 76,
+    title: "Asher Recycled Rings 4-in-1",
+    price: 39.99,
+    imgSrc: "/images/products/jewelry/men/men-20.jpg",
+    imgHover: "/images/products/jewelry/men/men-20.jpg",
+    isOnisOnSale: false,
+  },
+ 
+
+  {
+    id: 78,
+    title: "Mia Amalfi Bracelet Gold",
+    price: 129.99,
+    oldPrice: 98.0,
+    imgSrc: "/images/products/jewelry/men/men-6.jpg",
+    imgHover: "/images/products/jewelry/men/men-5.jpg",
+    addToCart: "Quick Add",
+    sizes: ["S", "M", "L", "XL"],
+    countdown: 1007500,
+    colors: [
+      {
+        bgColor: "bg-light-green",
+        imgSrc: "/images/products/jewelry/jewelry-6.jpg",
+      },
+      {
+        bgColor: "bg-light-grey",
+        imgSrc: "/images/products/jewelry/jewelry-7.jpg",
+      },
+    ],
+  },
+  {
+    id: 79,
+    title: "Asher Recycled Rings 4-in-1",
+    price: 219.99,
+    oldPrice: 98.0,
+    imgSrc: "/images/products/jewelry/men/men-4.jpg",
+    imgHover: "/images/products/jewelry/men/men-4.jpg",
+    colors: [
+      {
+        bgColor: "bg-grey",
+        imgSrc: "/images/products/jewelry/jewelry-8.jpg",
+      },
+      {
+        bgColor: "bg-main",
+        imgSrc: "/images/products/jewelry/jewelry-9.jpg",
+      },
+    ],
+  },
+  
+  {
+    id: 80,
+    imgSrc: "/images/products/jewelry/men/men-21.jpg",
+    imgHover: "/images/products/jewelry/men/men-31.jpg",
+    title: "Penelope Recycled Earrings",
+    price: 39.99,
+    sizes: ["S", "M", "L", "XL"],
+    isOnSale: false,
+  },
+ 
+  // {
+  //   id: 81,
+  //   imgSrc: "/images/products/jewelry/men/men-6.jpg",
+  //   imgHover: "/images/products/jewelry/men/men-6.jpg",
+  //   title: "Charm Recycled Circle Earrings",
+  //   price: 129.99,
+  //   oldPrice: 98.0,
+  //   sizes: ["S", "M", "L", "XL"],
+  //   colors: [
+  //     {
+  //       bgColor: "bg-light-green",
+  //       imgSrc: "/images/products/jewelry/jewelry-13.jpg",
+  //     },
+  //     {
+  //       bgColor: "bg-grey",
+  //       imgSrc: "/images/products/jewelry/jewelry-14.jpg",
+  //     },
+  //   ],
+  //   isOnSale: false,
+  // },
+ 
+  // {
+  //   id: 83,
+  //   imgSrc: "/images/products/jewelry/jewelry-17.jpg",
+  //   imgHover: "/images/products/jewelry/jewelry-18.jpg",
+  //   title: "Faux-leather trousers",
+  //   price: 79.99,
+  //   sizes: ["S", "M", "L", "XL"],
+  //   isOnSale: true,
+  // },
 ];
 
 export const product16 = [
