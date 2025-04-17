@@ -23,12 +23,24 @@ export const colors = [
   { name: "Light Blue", className: "bg-light-blue-5" },
   { name: "Dark Blue", className: "bg-dark-blue" },
 ];
+export const metal = [
+  { name: "Gold", className: "bg-gold" },
+  { name: "Silver", className: "bg-silver" },
+  { name: "Rose Gold", className: "bg-rose-gold" },
+];
+
 
 export const availabilityOptions = [
   { id: "inStock", label: "In stock", count: 32, value: true },
   { id: "outStock", label: "Out of stock", count: 2, value: false },
 ];
-
+export const occasionOptions = [
+  { id: "wedding", label: "Wedding Rings", count: 15, value: "wedding" },
+  { id: "office", label: "Office-Wear Rings", count: 10, value: "office" },
+  { id: "anniversary", label: "Anniversary Rings", count: 8, value: "anniversary" },
+  { id: "party", label: "Party Rings", count: 6, value: "party" },
+  { id: "casual", label: "Casual Rings", count: 12, value: "casual" },
+];
 export const brands = [
   { id: "nike", label: "Nike", count: 112 },
   { id: "LV", label: "Louis Vuitton", count: 2 },

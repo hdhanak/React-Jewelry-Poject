@@ -3,6 +3,8 @@ import {
   brands,
   categories,
   colors,
+  metal,
+  occasionOptions,
   sizes,
 } from "@/data/productFilterOptions";
 import { productMain } from "@/data/products";
@@ -62,7 +64,7 @@ export default function FilterSidebar({ allProps }) {
               </div>
             </div>
           </div>
-          <div className="widget-facet facet-size">
+          {/* <div className="widget-facet facet-size">
             <h6 className="facet-title">Size</h6>
             <div className="facet-size-box size-box">
               {sizes.map((size, index) => (
@@ -85,11 +87,11 @@ export default function FilterSidebar({ allProps }) {
                 Free Size
               </span>
             </div>
-          </div>
+          </div> */}
           <div className="widget-facet facet-color">
-            <h6 className="facet-title">Colors</h6>
+            <h6 className="facet-title">Metal</h6>
             <div className="facet-color-box">
-              {colors.map((color, index) => (
+              {metal.map((color, index) => (
                 <div
                   onClick={() => allProps.setColor(color)}
                   key={index}
@@ -104,9 +106,9 @@ export default function FilterSidebar({ allProps }) {
             </div>
           </div>
           <div className="widget-facet facet-fieldset">
-            <h6 className="facet-title">Availability</h6>
+            <h6 className="facet-title">Occasion</h6>
             <div className="box-fieldset-item">
-              {availabilityOptions.map((option, index) => (
+              {occasionOptions.map((option, index) => (
                 <fieldset
                   key={index}
                   className="fieldset-item"
@@ -134,7 +136,7 @@ export default function FilterSidebar({ allProps }) {
               ))}
             </div>
           </div>
-          <div className="widget-facet facet-fieldset">
+          {/* <div className="widget-facet facet-fieldset">
             <h6 className="facet-title">Brands</h6>
             <div className="box-fieldset-item">
               {brands.map((brand, index) => (
@@ -165,7 +167,7 @@ export default function FilterSidebar({ allProps }) {
                 </fieldset>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="canvas-bottom d-block d-xl-none">
           <button
